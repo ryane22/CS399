@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtOutput"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add" />
+
+            <EditText
+                android:id="@+id/edtNameToAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name to add" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/edtPhoneToAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone to add"
+                android:inputType="phone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Search" />
+
+            <EditText
+                android:id="@+id/edtNameToFind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name to find" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

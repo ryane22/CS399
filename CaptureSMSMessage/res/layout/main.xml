@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".CaptureSms" >
+
+    <TextView
+        android:id="@+id/txtCapturedSMSMessages"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff0000ff"
+        android:text="Captured SMS messages"
+        android:textSize="20px"
+        android:textStyle="bold" >
+    </TextView>
+
+    <ScrollView
+        android:id="@+id/myScroller1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/txtCapturedMessages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#ffffffff"
+            android:padding="4px"
+            android:textColor="#ff000000"
+            android:textSize="14px" >
+        </TextView>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/txtAllSMSMessages"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff0000ff"
+        android:text="ALL SMS messages"
+        android:textSize="20px"
+        android:textStyle="bold" >
+    </TextView>
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/txtPublicMessages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#ffffffff"
+            android:padding="4px"
+            android:textColor="#ff000000"
+            android:textSize="14px" />
+    </ScrollView>
+
+</LinearLayout>

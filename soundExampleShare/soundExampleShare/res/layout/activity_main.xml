@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/app_name"
+    />
+<LinearLayout
+	android:orientation="horizontal"
+	android:layout_height="wrap_content"
+	android:layout_width="fill_parent"
+	>
+<Button
+	android:id="@+id/playvideoplayer"  
+    android:layout_width="0dip" 
+    android:layout_height="wrap_content" 
+    android:layout_weight="1"
+    android:text="- PLAY Video -"
+    />
+<Button
+	android:id="@+id/pausevideoplayer"  
+    android:layout_width="0dip" 
+    android:layout_height="wrap_content" 
+    android:layout_weight="1"
+    android:text="- PAUSE Video -"
+    />
+</LinearLayout>
+<SeekBar
+	android:id="@+id/volbar"
+	android:layout_width="fill_parent"   
+	android:layout_height="wrap_content"   
+	android:layout_margin="10px"  
+	/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="Volume" />
+
+    <TextView
+        android:id="@+id/txtVolume"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2" />
+
+    <Button
+        android:id="@+id/btnMute"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:text="Mute" />
+
+    <Button
+        android:id="@+id/btn50Percent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:text="Volume 50%" />
+
+</LinearLayout>
+  
+<SurfaceView
+    android:id="@+id/surfaceview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+</LinearLayout>

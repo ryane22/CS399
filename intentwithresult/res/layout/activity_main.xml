@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity 1"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtValue1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter First Value" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtValue2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Second Value" />
+
+    <Button
+        android:id="@+id/btnAddValues"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnAddValues"
+        android:text="@string/sum"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/txtSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+</LinearLayout>

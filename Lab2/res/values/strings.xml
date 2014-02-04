@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lab 2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title">Order Form</string>
+    <string name="tie">Tie</string>
+    <string name="bowTie">Bow Tie</string>
+    <string name="ascot">Ascot</string>
+    <string name="calculate">Calculate Total</string>
+    <string name="tiePrice">$59.50</string>
+    <string name="bowTiePrice">$69.50</string>
+    <string name="ascotPrice">$39.50</string>
+    <string name="details">Details</string>
+    <string name="quantitiy">Quantity</string>
+    <string name="zero">0</string>
+    <string name="back">Back</string>
+    <string name="tieDescription">A tie is a long piece of cloth worn for decorative purposes around the neck or shoulders, resting under the shirt collar and knotted at the throat.</string>
+    <string name="bowTieDescription">The bow tie is a type of men\'s necktie. It consists of a ribbon of fabric tied around the collar in a symmetrical manner such that the two opposite ends form loops.</string>
+    <string name="ascotDescription">An ascot tie, or ascot, is a narrow neckband with wide pointed wings, traditionally made of pale grey patterned silk. This wide, formal tie is usually patterned, folded over, and fastened with a stickpin or tie tack.</string>
+
+</resources>

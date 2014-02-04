@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">spinnerexample</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="month">Month</string>
+    <string name="day">Day</string>
+    <string name="dayOfWeek">Day of Week</string>
+    <string-array name="months">
+        <item >January</item>
+        <item >February</item>
+        <item >March</item>
+        <item >April</item>
+        <item >May</item>
+        <item >June</item>
+        <item >July</item>
+        <item >August</item>
+        <item>September</item><item >October</item>
+        <item >November</item>
+        <item >December</item>
+        
+    </string-array>
+    <string-array name="weekdays">
+        <item>Sunday</item>
+        <item >Monday</item>
+        <item >Tuesday</item>
+        <item >Wednesday</item>
+        <item >Thursday</item>
+        <item >Friday</item>
+        <item >Saturday</item>
+        
+    </string-array>
+    <string name="show">Show Info</string>
+
+</resources>

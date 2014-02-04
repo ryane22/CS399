@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FINALproject</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="add">+</string>
+    <string name="projectName">Project Name</string>
+    <string name="description">Description</string>
+    <string name="deadline">Deadline</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit">Edit</string>
+    <string name="task">Task</string>
+    <string name="startDate">Start Date</string>
+    <string name="timeSpent">Time Spent</string>
+    <string name="numTasks">Number Of Tasks</string>
+    <string name="finalProject">FINALproject</string>
+
+</resources>

@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddd"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edtFirst"
+        android:layout_alignParentLeft="true"
+        android:text="First" />
+
+    <EditText
+        android:id="@+id/edtLast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="36dp"
+        android:text="Last" />
+
+    <EditText
+        android:id="@+id/edtFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edtFirst"
+        android:layout_alignLeft="@+id/edtLast"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnOkay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnCancel"
+        android:layout_alignBottom="@+id/btnCancel"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/btnCancel"
+        android:text="Okay" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnOkay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:gravity="center_horizontal"
+        android:text="The User Entered"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/edtEntered"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView3"
+        android:ems="10"
+        android:gravity="top|left"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/edtLast"
+        android:layout_below="@+id/rdoGender"
+        android:text="Cancel" />
+
+    <RadioGroup
+        android:id="@+id/rdoGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtLast"
+        android:layout_below="@+id/edtLast"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rdoMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/rdoFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+
+    </RadioGroup>
+
+</RelativeLayout>

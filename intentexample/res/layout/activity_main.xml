@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/txtNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/num" />
+
+    <EditText
+        android:id="@+id/edtNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txtNumber"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnMakeCall"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnStartCall"
+        android:text="@string/makecall" />
+
+    <Button
+        android:id="@+id/btnStartText"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnMakeCall"
+        android:text="@string/starttext" />
+
+    <Button
+        android:id="@+id/btnMakeText"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnStartText"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnStartText"
+        android:text="@string/maketext" />
+
+    <TextView
+        android:id="@+id/txtURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edtMessage"
+        android:text="@string/url" />
+
+    <Button
+        android:id="@+id/btnBrowse"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnMakeText"
+        android:onClick="goToWebsite"
+        android:text="@string/browse" />
+
+    <EditText
+        android:id="@+id/edtURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txtURL"
+        android:ems="10"
+        android:inputType="text|textUri" />
+
+    <EditText
+        android:id="@+id/edtMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edtNumber"
+        android:ems="10"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/edtMessage"
+        android:text="@string/message" />
+
+    <Button
+        android:id="@+id/btnMaps"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnBrowse"
+        android:onClick="goToMaps"
+        android:text="@string/map" />
+
+    <Button
+        android:id="@+id/btnStartCall"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edtURL"
+        android:layout_marginTop="28dp"
+        android:text="@string/startcall" />
+
+</RelativeLayout>

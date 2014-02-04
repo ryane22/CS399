@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txtFirst"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="@string/firstName" />
+
+        <EditText
+            android:id="@+id/edtFirst"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textCapSentences|textPersonName" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txtLast"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lastName" />
+
+        <EditText
+            android:id="@+id/edtLast"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textCapSentences|textPersonName" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGreet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="greet"
+        android:text="@string/greetMe" />
+
+</LinearLayout>

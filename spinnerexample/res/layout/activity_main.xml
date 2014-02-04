@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/txtMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/month" />
+
+    <Spinner
+        android:id="@+id/spnMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/months" />
+
+    <TextView
+        android:id="@+id/txtDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/day" />
+
+    <Spinner
+        android:id="@+id/spnDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/dayOfWeek" />
+
+    <Spinner
+        android:id="@+id/spnWeekday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/weekdays" />
+
+    <Button
+        android:id="@+id/btnShowInfo"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/show" />
+
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
